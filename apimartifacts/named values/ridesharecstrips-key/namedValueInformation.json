@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "displayName": "ridesharecstrips-key",
+    "secret": true,
+    "tags": [
+      "key",
+      "function",
+      "auto"
+    ]
+  }
+}

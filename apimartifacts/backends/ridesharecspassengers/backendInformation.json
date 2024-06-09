@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "credentials": {
+      "header": {
+        "x-functions-key": [
+          "{{ridesharecspassengers-key}}"
+        ]
+      }
+    },
+    "description": "RideshareCSPassengers",
+    "protocol": "http",
+    "resourceId": "https://management.azure.com/subscriptions/b99b5b7c-8c21-4203-863a-84cce54de7c0/resourceGroups/RideShare/providers/Microsoft.Web/sites/RideshareCSPassengers",
+    "url": "https://ridesharecspassengers.azurewebsites.net/api"
+  }
+}

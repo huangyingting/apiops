@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "approvalRequired": true,
+    "description": "Rideshare APIs",
+    "displayName": "RideShare",
+    "state": "published",
+    "subscriptionRequired": true,
+    "subscriptionsLimit": 72
+  }
+}

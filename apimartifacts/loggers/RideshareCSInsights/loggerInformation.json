@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "credentials": {
+      "instrumentationKey": "{{Logger-Credentials--63293fb5463461156c481aa2}}"
+    },
+    "description": "Logger resources to APIM",
+    "isBuffered": true,
+    "loggerType": "applicationInsights"
+  }
+}

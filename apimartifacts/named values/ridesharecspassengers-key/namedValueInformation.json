@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "displayName": "ridesharecspassengers-key",
+    "secret": true,
+    "tags": [
+      "key",
+      "function",
+      "auto"
+    ]
+  }
+}

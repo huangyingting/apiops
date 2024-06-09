@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "apiRevision": "1",
+    "authenticationSettings": {
+      "oAuth2": {
+        "authorizationServerId": "rideshare"
+      }
+    },
+    "description": "Import from \u0022RideshareCSPassengers\u0022 Function App",
+    "displayName": "Rideshare Passengers API",
+    "isCurrent": true,
+    "path": "p",
+    "protocols": [
+      "https"
+    ],
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}
