@@ -1,0 +1,92 @@
+openapi: 3.0.1
+info:
+  title: Rideshare Trips API
+  description: Import from "RideshareCSTrips" Function App
+  version: '1.0'
+servers:
+  - url: https://ridesharecsapim.azure-api.net/t
+paths:
+  /triptestparameters:
+    post:
+      summary: StoreTripTestParameters
+      operationId: post-storetriptestparameters
+      responses:
+        '200':
+          description: 
+    get:
+      summary: RetrieveTripTestParameters
+      operationId: get-retrievetriptestparameters
+      responses:
+        '200':
+          description: 
+  /activetrips:
+    get:
+      summary: GetActiveTrips
+      operationId: get-getactivetrips
+      responses:
+        '200':
+          description: 
+  /trips:
+    get:
+      summary: GetTrips
+      operationId: get-gettrips
+      responses:
+        '200':
+          description: 
+    post:
+      summary: CreateTrip
+      operationId: post-createtrip
+      responses:
+        '200':
+          description: 
+  '/trips/{code}':
+    get:
+      summary: GetTrip
+      operationId: get-gettrip
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: 
+  /signalrinfo:
+    get:
+      summary: GetSignalRInfo
+      operationId: get-getsignalrinfo
+      responses:
+        '200':
+          description: 
+  '/trips/{code}/drivers/{drivercode}':
+    post:
+      summary: AssignTripDriver
+      operationId: post-assigntripdriver
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: ''
+        - name: drivercode
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: 
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

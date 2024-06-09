@@ -1,0 +1,41 @@
+openapi: 3.0.1
+info:
+  title: Rideshare Passengers API
+  description: Import from "RideshareCSPassengers" Function App
+  version: '1.0'
+servers:
+  - url: https://ridesharecsapim.azure-api.net/p
+paths:
+  /passengers:
+    get:
+      summary: GetPassengers
+      operationId: get-getpassengers
+      responses:
+        '200':
+          description: 
+  '/passengers/{userid}':
+    get:
+      summary: GetPassenger
+      operationId: get-getpassenger
+      parameters:
+        - name: userid
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: 
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

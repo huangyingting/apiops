@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "displayName": "ridesharecsdrivers-key",
+    "secret": true,
+    "tags": [
+      "key",
+      "function",
+      "auto"
+    ]
+  }
+}

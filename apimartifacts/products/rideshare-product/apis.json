@@ -1,0 +1,11 @@
+[
+  {
+    "name": "rideshare-drivers"
+  },
+  {
+    "name": "rideshare-passengers"
+  },
+  {
+    "name": "rideshare-trips"
+  }
+]

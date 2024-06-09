@@ -1,0 +1,115 @@
+openapi: 3.0.1
+info:
+  title: RideShare Drivers API
+  description: Import from "RideshareCSDrivers" Function App
+  version: '1.0'
+servers:
+  - url: https://ridesharecsapim.azure-api.net/d
+paths:
+  '/drivers/{latitude}/{longitude}/{miles}':
+    get:
+      summary: GetDriversWithinLocation
+      operationId: get-getdriverswithinlocation
+      parameters:
+        - name: latitude
+          in: path
+          required: true
+          schema:
+            type: ''
+        - name: longitude
+          in: path
+          required: true
+          schema:
+            type: ''
+        - name: miles
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: 
+  '/driverlocations/{code}':
+    get:
+      summary: GetDriverLocations
+      operationId: get-getdriverlocations
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: 
+  /driverlocations:
+    put:
+      summary: UpdateDriverLocation
+      operationId: put-updatedriverlocation
+      responses:
+        '200':
+          description: 
+  /activedrivers:
+    get:
+      summary: GetActiveDrivers
+      operationId: get-getactivedrivers
+      responses:
+        '200':
+          description: 
+  '/drivers/{code}':
+    delete:
+      summary: DeleteDriver
+      operationId: delete-deletedriver
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: 
+    get:
+      summary: GetDriver
+      operationId: get-getdriver
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: 
+  /drivers:
+    post:
+      summary: CreateDriver
+      operationId: post-createdriver
+      responses:
+        '200':
+          description: 
+    put:
+      summary: UpdateDriver
+      operationId: put-updatedriver
+      responses:
+        '200':
+          description: 
+    get:
+      summary: GetDrivers
+      operationId: get-getdrivers
+      responses:
+        '200':
+          description: 
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

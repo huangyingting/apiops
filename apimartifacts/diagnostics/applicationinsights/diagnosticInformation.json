@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "alwaysLog": "allErrors",
+    "backend": {
+      "request": {
+        "dataMasking": {
+          "queryParams": [
+            {
+              "mode": "Hide",
+              "value": "*"
+            }
+          ]
+        }
+      }
+    },
+    "frontend": {
+      "request": {
+        "dataMasking": {
+          "queryParams": [
+            {
+              "mode": "Hide",
+              "value": "*"
+            }
+          ]
+        }
+      }
+    },
+    "httpCorrelationProtocol": "Legacy",
+    "logClientIp": true,
+    "loggerId": "/subscriptions/b99b5b7c-8c21-4203-863a-84cce54de7c0/resourceGroups/RideShare/providers/Microsoft.ApiManagement/service/RideshareCSApim/loggers/RideshareCSInsights",
+    "sampling": {
+      "percentage": 100,
+      "samplingType": "Fixed"
+    }
+  }
+}

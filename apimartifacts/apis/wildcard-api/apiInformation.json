@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "displayName": "Wildcard API",
+    "isCurrent": true,
+    "path": "wildcard",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://azfunwildcard.azurewebsites.net/api",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

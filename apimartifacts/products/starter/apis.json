@@ -1,0 +1,14 @@
+[
+  {
+    "name": "calculator-api"
+  },
+  {
+    "name": "echo-api"
+  },
+  {
+    "name": "star-wars-api"
+  },
+  {
+    "name": "sw-graphql-api"
+  }
+]
