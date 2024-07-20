@@ -8,4 +8,4 @@ loggers:
 namedValues:
   - name: AppInsights-Key
     properties:
-      value: aa1bd0d6-47b7-4500-99f5-bc0083cd0d41
+      value: fe3fd944-9ee7-45a5-9759-908698a77948
