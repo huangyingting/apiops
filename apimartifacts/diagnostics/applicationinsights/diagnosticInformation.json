@@ -1,6 +1,5 @@
 {
   "properties": {
-    "loggerId": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/Microsoft.ApiManagement/service/aigw/loggers/aigw",
     "alwaysLog": "allErrors",
     "backend": {
       "request": {
@@ -28,9 +27,10 @@
     },
     "httpCorrelationProtocol": "Legacy",
     "logClientIp": true,
+    "loggerId": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/Microsoft.ApiManagement/service/aigw/loggers/aigw",
     "sampling": {
       "percentage": 100,
-      "samplingType": "fixed"
+      "samplingType": "Fixed"
     }
   }
 }
