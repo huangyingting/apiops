@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "scope": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/Microsoft.ApiManagement/service/aigw/products/starter",
+    "allowTracing": false,
+    "ownerId": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/Microsoft.ApiManagement/service/aigw/users/1",
+    "state": "active"
+  }
+}
