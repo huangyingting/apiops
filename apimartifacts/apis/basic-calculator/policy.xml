@@ -1,0 +1,36 @@
+<!--
+    - Policies are applied in the order they appear.
+    - Position <base/> inside a section to inherit policies from the outer scope.
+    - Comments within policies are not preserved.
+-->
+<!-- Add policies as children to the <inbound>, <outbound>, <backend>, and <on-error> elements -->
+<policies>
+	<!-- Throttle, authorize, validate, cache, or transform the requests -->
+	<inbound>
+		<base />
+		<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid.">
+			<openid-config url="https://login.microsoftonline.com/736e8d18-4edf-4080-96b9-69afaec94892/v2.0/.well-known/openid-configuration" />
+			<audiences>
+				<audience>a40c1a3e-6f5a-4560-b72b-e7042466b504</audience>
+			</audiences>
+		</validate-jwt>
+		<emit-metric name="Request" value="1" namespace="calculator">
+			<dimension name="User ID" />
+			<dimension name="Client IP" value="@(context.Request.IpAddress)" />
+			<dimension name="API ID" />
+			<dimension name="Subscription ID" />
+		</emit-metric>
+	</inbound>
+	<!-- Control if and how the requests are forwarded to services  -->
+	<backend>
+		<base />
+	</backend>
+	<!-- Customize the responses -->
+	<outbound>
+		<base />
+	</outbound>
+	<!-- Handle exceptions and customize error responses  -->
+	<on-error>
+		<base />
+	</on-error>
+</policies>
