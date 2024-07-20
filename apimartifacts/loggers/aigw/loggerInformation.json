@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "loggerType": "applicationInsights",
+    "credentials": {
+      "instrumentationKey": "{{Logger-Credentials--669a0527217d200598dbd1fb}}"
+    },
+    "isBuffered": true,
+    "resourceId": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/microsoft.insights/components/aigw"
+  }
+}
