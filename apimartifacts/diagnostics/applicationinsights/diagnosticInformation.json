@@ -1,11 +1,41 @@
 {
   "properties": {
     "alwaysLog": "allErrors",
+    "backend": {
+      "request": {
+        "body": {
+          "bytes": 1024
+        },
+        "headers": []
+      },
+      "response": {
+        "body": {
+          "bytes": 1024
+        },
+        "headers": []
+      }
+    },
+    "frontend": {
+      "request": {
+        "body": {
+          "bytes": 1024
+        },
+        "headers": []
+      },
+      "response": {
+        "body": {
+          "bytes": 1024
+        },
+        "headers": []
+      }
+    },
     "httpCorrelationProtocol": "Legacy",
     "logClientIp": true,
+    "loggerId": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/Microsoft.ApiManagement/service/aigw/loggers/appinsights",
     "sampling": {
       "percentage": 100,
       "samplingType": "Fixed"
-    }
+    },
+    "verbosity": "information"
   }
 }
