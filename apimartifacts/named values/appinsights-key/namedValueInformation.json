@@ -1,0 +1,6 @@
+{
+  "properties": {
+    "displayName": "AppInsights-Key",
+    "secret": true
+  }
+}

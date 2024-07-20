@@ -1,0 +1,11 @@
+apimServiceName: aigwje
+
+loggers:
+  - name: appinsights
+    properties:
+      resourceId: /subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/microsoft.insights/components/aigwje
+
+# namedValues:
+#  - name: appinsights-key
+#     properties:
+#       value: 
