@@ -1,0 +1,7 @@
+{
+  "properties": {
+    "displayName": "AppInsights-Key",
+    "secret": true,
+    "value": "aa1bd0d6-47b7-4500-99f5-bc0083cd0d41"
+  }
+}
