@@ -1,6 +1,5 @@
 {
   "properties": {
-    "loggerId": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/Microsoft.ApiManagement/service/aigw/loggers/azuremonitor",
     "backend": {
       "request": {
         "dataMasking": {
@@ -26,9 +25,10 @@
       }
     },
     "logClientIp": true,
+    "loggerId": "/subscriptions/513df66c-64b0-4c0b-a13a-7f37bb384aff/resourceGroups/AIGW/providers/Microsoft.ApiManagement/service/aigw/loggers/azuremonitor",
     "sampling": {
       "percentage": 100,
-      "samplingType": "fixed"
+      "samplingType": "Fixed"
     }
   }
 }
