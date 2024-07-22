@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "Origin",
+    "secret": false,
+    "tags": [],
+    "value": "https://aigw.developer.azure-api.net"
+  }
+}
