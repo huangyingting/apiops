@@ -9,3 +9,8 @@ loggers:
 #  - name: appinsights-key
 #     properties:
 #       value: 
+
+namedValues:
+ - name: origin
+    properties:
+      value: https://aigwje.developer.azure-api.net
