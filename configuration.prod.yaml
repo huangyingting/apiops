@@ -11,6 +11,6 @@ loggers:
 #       value: 
 
 namedValues:
- - name: origin
+  - name: origin
     properties:
       value: https://aigwje.developer.azure-api.net
