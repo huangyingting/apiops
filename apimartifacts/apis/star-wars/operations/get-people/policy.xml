@@ -5,6 +5,7 @@
 -->
 <!-- Add policies as children to the <inbound>, <outbound>, <backend>, and <on-error> elements -->
 <policies>
+	<!-- Add policies as children to the <inbound>, <outbound>, <backend>, and <on-error> elements -->
 	<inbound>
 		<!-- How you determine user identity is application dependent -->
 		<set-variable name="enduserid" value="@(context.Request.Headers.GetValueOrDefault("Authorization","").Split(' ')[1].AsJwt()?.Subject)" />
@@ -35,7 +36,6 @@
 		<find-and-replace from="&quot;$userprofile$&quot;" to="@((string)context.Variables["userprofile"])" />
 		<base />
 	</outbound>
-	<!-- Handle exceptions and customize error responses  -->
 	<!-- Handle exceptions and customize error responses  -->
 	<on-error>
 		<base />
