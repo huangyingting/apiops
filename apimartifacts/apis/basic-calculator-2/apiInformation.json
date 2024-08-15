@@ -9,7 +9,7 @@
     "description": "Arithmetics is just a call away!",
     "displayName": "Basic Calculator",
     "isCurrent": true,
-    "path": "calc",
+    "path": "calc2",
     "protocols": [
       "http",
       "https"
