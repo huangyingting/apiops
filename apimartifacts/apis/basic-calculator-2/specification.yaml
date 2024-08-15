@@ -4,8 +4,8 @@ info:
   description: Arithmetics is just a call away!
   version: '1.0'
 servers:
-  - url: http://aigw.azure-api.net/calc
-  - url: https://aigw.azure-api.net/calc
+  - url: http://aigw.azure-api.net/calc2
+  - url: https://aigw.azure-api.net/calc2
 paths:
   /add:
     get:
